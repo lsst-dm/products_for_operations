@@ -82,4 +82,31 @@
             <IDL_Type>long</IDL_Type>
         </item>
     </Topic>
+    <Topic>
+        <name>image_archived_base</name>
+        <Description>
+        Image archived at Base
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_id</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+    <Topic>
+        <name>image_archived_archive</name>
+        <Description>
+        Image archived at Archive
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_id</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+        
 </Telemetry>
