@@ -1,0 +1,109 @@
+<Telemetry>
+    <Topic>
+        <name>successfully_archived_focal_plane_current</name>
+        <Description>
+        Number of successfully archived focal plane images since entering current mode
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>5</Latency>
+        <Comment>Successfully archive = DM takes responsibility</Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>successfully_archived_focal_plane_operations</name>
+        <Description>
+        Number of successfully archived focal plane images since beginning of operations
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>5</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>last_successfully_archive_focal_plane</name>
+        <Description>
+        Identifier of last successfully archived focal plane image
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>5</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_id</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>efd_slave_replication_state</name>
+        <Description>
+        EFD slave replications state
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>10</Latency>
+        <Comment>Includes how far (if any) behind the slave is from the master</Comment>
+        <item>
+            <name>replication_state</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>summit_to_base_network_status</name>
+        <Description>
+        Summit to base network status
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>1</Latency>
+        <Comment>Includes whether using primary/backup link, link usage/capacity, link latency, other metrics</Comment>
+        <item>
+            <name>link_usage</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_utilization</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_capacity</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_latency</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>international_network_status</name>
+        <Description>
+        Long-haul international network status
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>1</Latency>
+        <Comment>Includes whether using primary/backup link, link usage/capacity, link latency, other metrics</Comment>
+        <item>
+            <name>link_usage</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_utilization</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_capacity</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>link_latency</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+</Telemetry>

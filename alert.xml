@@ -1,0 +1,71 @@
+<Telemetry>
+    <Topic>
+        <name>psf_wcs_last_visit</name>
+        <Description>
+        PSF, WCS parameters for last visit
+        </Description>
+        <Frequency>Visit</Frequency>
+        <Latency>60</Latency>
+        <Comment>Intended for TCS active optics feedback; expected to be of higher precision and accuracy than Summit-only computations.</Comment>
+        <item>
+            <name></name>
+            <IDL_Type></IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>summary_data_quality_parameters</name>
+        <Description>
+        Summary data quality parameters (average PSF? WCS distortions? gray extinction?)
+        </Description>
+        <Frequency>Visit</Frequency>
+        <Latency>60</Latency>
+        <Comment> Intended for operator QA; expected to be of higher precision and accuracy than Summit-only computations. </Comment>
+        <item>
+            <name></name>
+            <IDL_Type></IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>alerts_sent</name>
+        <Description>
+        Number of Alerts sent
+        </Description>
+        <Frequency>Visit</Frequency>
+        <Latency>75</Latency>
+        <Comment></Comment>
+        <item>
+            <name>alerts_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>available_workers</name>
+        <Description>
+        Number of known-available worker machines
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>machine_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>latency_readout_to_last_alert</name>
+        <Description>
+        Latency from readout to last alert for visit
+        </Description>
+        <Frequency>Visit</Frequency>
+        <Latency>75</Latency>
+        <Comment></Comment>
+        <item>
+            <name>latency</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+</Telemetry>

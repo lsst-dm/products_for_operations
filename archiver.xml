@@ -1,0 +1,85 @@
+<Telemetry>
+    <Topic>
+        <name>successfully_archived_raft_current</name>
+        <Description>
+        Number of successfully archived raft images since entering current mode
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>5</Latency>
+        <Comment>Successfully archive = DM takes responsibility</Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>successfully_archived_raft_operations</name>
+        <Description>
+        Number of successfully archived raft images since beginning of operations
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>5</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>raft_images_not_sent</name>
+        <Description>
+        Number of raft images in network outage buffer NOT sent to Archive Center
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>20</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>raft_images_sent_current</name>
+        <Description>
+        Number of images sent to Archive Center since entering current mode
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>raft_images_sent_operations</name>
+        <Description>
+        Number of images sent to Archive Center since beginning of operations
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+
+    <Topic>
+        <name>available_replicators_distributors</name>
+        <Description>
+        Number of known-available replicator/distributor machines
+        </Description>
+        <Frequency>Periodic</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>machine_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+</Telemetry>
