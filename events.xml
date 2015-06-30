@@ -1,0 +1,45 @@
+<Event>
+    <Topic>
+        <name>processed_and_published</name>
+        <Description>
+        Visit processed and alerts published
+        </Description>
+        <Frequency>Visit</Frequency>
+        <Latency>75</Latency>
+        <Comment></Comment>
+        <item>
+            <name>visit_identifier</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+        <item>
+            <name>alert_count</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+    <Topic>
+        <name>image_archived_base</name>
+        <Description>
+        Image archived at Base
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_id</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+    <Topic>
+        <name>image_archived_archive</name>
+        <Description>
+        Image archived at Archive
+        </Description>
+        <Frequency>Image</Frequency>
+        <Latency>10</Latency>
+        <Comment></Comment>
+        <item>
+            <name>image_id</name>
+            <IDL_Type>long</IDL_Type>
+        </item>
+    </Topic>
+</Event>

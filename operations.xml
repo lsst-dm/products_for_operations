@@ -1,4 +1,4 @@
-<Event>
+<Telemetry>
     <Topic>
         <name>successfully_archived_focal_plane_current</name>
         <Description>
@@ -106,4 +106,4 @@
             <IDL_Type>long</IDL_Type>
         </item>
     </Topic>
-</Event>
+</Telemetry>

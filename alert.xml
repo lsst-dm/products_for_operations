@@ -1,4 +1,4 @@
-<Event>
+<Telemetry>
     <Topic>
         <name>psf_wcs_last_visit</name>
         <Description>
@@ -68,21 +68,4 @@
             <IDL_Type>long</IDL_Type>
         </item>
     </Topic>
-    <Topic>
-        <name>processed_and_published</name>
-        <Description>
-        Visit processed and alerts published
-        </Description>
-        <Frequency>Visit</Frequency>
-        <Latency>75</Latency>
-        <Comment></Comment>
-        <item>
-            <name>visit_identifier</name>
-            <IDL_Type>long</IDL_Type>
-        </item>
-        <item>
-            <name>alert_count</name>
-            <IDL_Type>long</IDL_Type>
-        </item>
-    </Topic>
-</Event>
+</Telemetry>
