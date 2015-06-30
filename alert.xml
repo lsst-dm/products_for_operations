@@ -1,4 +1,4 @@
-<Telemetry>
+<Event>
     <Topic>
         <name>psf_wcs_last_visit</name>
         <Description>
@@ -85,4 +85,4 @@
             <IDL_Type>long</IDL_Type>
         </item>
     </Topic>
-</Telemetry>
+</Event>

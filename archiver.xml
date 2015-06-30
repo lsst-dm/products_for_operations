@@ -1,4 +1,4 @@
-<Telemetry>
+<Event>
     <Topic>
         <name>successfully_archived_raft_current</name>
         <Description>
@@ -109,4 +109,4 @@
         </item>
     </Topic>
         
-</Telemetry>
+</Event>
